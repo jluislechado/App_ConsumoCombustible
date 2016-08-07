@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Todo trayecto tiene un precio</title>
+    <meta name="description" content="A free responsive HTML 5 template with a clean style.">
+    <meta name="keywords" content="free template, html 5, responsive, clean, scss">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/touch/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/touch/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/touch/apple-touch-icon-144x144.png">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+        <script src="js/respond.js"></script>
+    <![endif]-->
+</head>
+
+<body class="no-js">
+    <div class="main">
+        <header>
+            <div class="wrap">
+                <img src="upload/iPhone.png" height="532" width="252" alt="" class="header-img">
+                <div class="header-wrapper">
+                    <h1>TU VIAJE <span>en cifras</span></h1>
+                    <p>¿Quieres conocer cúanto vas a gastar en tu viaje en función del coche que uses?.</p>
+                    <p class="autor"><a href="#">Equipo MaYLu</a></p>
+                    <div class="buttons-wrapper">
+                        <a href="#centro" class="button">EMPEZAR</a>
+                        <a href="#" class="button button-stripe">DESCARGAR APP</a>
+                    </div>
+                </div>
+                <!-- /.header-wrapper -->
+            </div>
+            <!-- /.wrap -->
+        </header>
+        <div class="spanning">
+            <div class="promo clearfix">
+                <div class="wrap">
+                    <div class="promo-wrapper clearfix">
+                        <div class="promo-column">
+                            <img src="upload/pin.png" height="32" width="24" alt="">
+                            <h5>RUTAS</h5>
+                            <p>Conoce la distancia real del trayecto que vas a recorrer</p>
+                        </div>
+                        <div class="promo-column">
+                            <img src="upload/settings.png" height="32" width="33" alt="">
+                            <h5>VEHÍCULO</h5>
+                            <p>No todos ellos consumen igual, ¿Quieres saber cuánto gasta el tuyo? </p>
+                        </div>
+                        <div class="promo-column">
+                            <img src="upload/easy.png" height="32" width="34" alt="">
+                            <h5>blablacar</h5>
+                            <p>Que no te tomen el pelo. Conoce el precio real del viaje y reparte entre los pasajeros. </p>
+                        </div>
+                        <div class="promo-column">
+                            <img src="upload/saturn.png" height="32" width="32" alt="">
+                            <h5>RESPONSIVE</h5>
+                            <p>Descárgala en tu móvil y llévala siempre contigo. </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.wrap -->
+            </div>
+            <section id="centro">
+
+                <div id="izq">
+                    <h2 id="empezar">INTRODUZCA LOS DATOS DE SU VIAJE</h2>
+                    <label for="origen">Origen:</label>
+                    <input type="type" name="origen" id="origen" placeholder="calle, ciudad, estado..." />
+                    <br />
+                    <label for="destino">Destino:</label>
+                    <input type="text" name="destino" id="destino" placeholder="calle, ciudad, estado..." />
+                    <br>
+                    <select id="tipo_sistema" class="opciones_ruta">
+                        <option value="METRIC" selected="selected">Métrico</option>
+                        <option value="IMPERIAL">Imperial</option>
+                    </select>
+                    <!--<input type="button" class="button button-download-subtitule" id="buscar" value="Buscar ruta" />-->
+                </div>
+                <div id="cent">
+                    <h2 id="empezar">INTRODUZCA LOS DATOS DE SU COCHE</h2>
+                    <span>Marca:</span>
+                    <select id="marca">
+                        <span>Marca:</span>
+                        <br/>
+                        <option value="seat">SEAT</option>
+                        <option value="renault">RENAULT</option>
+                        <option value="peugeot">PEUGEOT</option>
+                    </select>
+                    <br/><span>Modelo:</span>
+                    <select id="modelo">
+                        <option value="ibiza">Ibiza</option>
+                        <option value="altea">Altea</option>
+                        <option value="toledo">Toledo</option>
+                        <option value="207">207</option>
+                        <option value="307">307</option>
+                        <option value="407">407</option>
+                        <option value="megane">megane</option>
+                        <option value="laguna">laguna</option>
+                    </select>
+                    <br/><span>Potencia:</span>
+                    <select id="potencia">
+                        <option value="75">75cv</option>
+                        <option value="90">90cv</option>
+                        <option value="102">102cv</option>
+                        <option value="105">105cv</option>
+                        <option value="125">125cv</option>
+                        <option value="140">140cv</option>
+                        <option value="150">150cv</option>
+                    </select>
+                    <br/><span>Tipo de combustible:</span>
+                    <select id="combustible">
+                        <option value="diesel">gasoil</option>
+                        <option value="gasolina">gasolina</option>
+                    </select>
+                    <br/><span>Precio del combustible (€/L):</span>
+                    <input type="number" id="precioC" name="precioC"/>
+                    <br>
+
+
+
+                </div>
+                <br/>
+
+                <a href="#divMapa"><input type="button" id="buscar" value="Calcular consumo" /></a>
+            </section>
+            <div id="divMapa">
+                <div id="cuadro">
+                    <h3 id="detalles"></h3><br>
+                    <span id="detallesDistancia"></span><br>
+                    <span id="detallesConsumo"></span><br>
+                    <span id="detallesCosto"></span><br>
+                    <span id="despedida"></span>
+                   
+                </div>
+                <div id="map_canvas"></div>
+            </div>
+
+
+            <div class="comments clearfix">
+                <div class="wrap">
+                    <div class="tab">
+                        <div class="box visible">
+
+                           
+                        </div>
+                        <div class="box">
+                            <h4>Users loving <a href="#">#APP-PLUS</a></h4>
+                            <p>Joining this weekend's #APP-PLUS fun! @emmy_lemmy bring your dogs, we can make it a fun walk!</p>
+                        </div>
+                        <div class="box">
+                            <h4>Folks enjoying <a href="#">#APP-PLUS</a></h4>
+                            <p>Nothing to fear, the new #APP-PLUS has my tiny street covered, so cool and such a powerful app.</p>
+                        </div>
+                        <ul class="tabs">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <a href="#" class="tab-prev"></a>
+                        <a href="#" class="tab-next"></a>
+                    </div>
+                </div>
+                <!-- /.wrap -->
+            </div>
+            <!-- /.comments clearfix -->
+            <!--<div class="simple clearfix">
+                <div class="wrap">
+                    <div class="simple-content">
+                        <h3>Planifica tus viajes y móntatelo de lujo</h3>
+                      
+                    </div>
+                    <div class="simple-img">
+                        <img src="images/imagenG.jpg" height="508" width="587" alt="">
+                    </div>
+                </div>
+                <!-- /.wrap 
+            </div>
+            <!-- /.simple clearfix -->
+            <div class="newsletter clearfix">
+                
+                <!-- /.wrap -->
+            </div>
+            <!-- /.newsletter clearfix -->
+        </div>
+        <!-- /.spanning-columns -->
+    </div>
+    <!-- /.main -->
+    <!-- DOWNLOAD BEGIN -->
+<!-- s="block-bg">--></div>
+    </section>
+    <!-- DOWNLOAD END -->
+    <footer>
+        <div class="wrap">
+            <p>&copy; 2014 <strong>APP Plus</strong>, All Rights Reserved</p>
+            <p class="text-center"> Theme by <a href="https://themewagon.com/"> Themewagon </a> </p>
+        </div>
+        <!-- /.wrap -->
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/library.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEyhGDhNzZ_GpEfcdB76wM1JtYqCBQ1HY&libraries=places"></script>
+    <script src="jquery.js"></script>
+    <script src="codigo.js"></script>
+</body>
+
+</html>
